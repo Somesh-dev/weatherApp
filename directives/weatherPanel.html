@@ -1,0 +1,4 @@
+<div class="panel panel-default">
+    <div ng-cloak class="panel-heading">{{ formatDate({ obj: weatherObj }) | date: 'MMM dd, yyyy' }}</div>
+    <div ng-cloak class="panel-body">Tempareture: {{ convertToFarenheit( {obj: weatherObj} ) }} K</div>
+</div>
