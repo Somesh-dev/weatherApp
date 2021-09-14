@@ -5,7 +5,7 @@ weatherApp.service("serviceWeather", ["$resource", "$q" ,function ($resource, $q
 
     this.getApi = function (city, scope) {
 
-        const APIKEY = "7344e3de045c2e88021af466066b4481";
+        const APIKEY = config.APIKEY;
         const URI = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKEY}`;
 
         let weatherAPI = $resource(URI);
